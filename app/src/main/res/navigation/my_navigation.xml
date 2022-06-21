@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ramizbek.aliyev.codialapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_courseFragment"
+            app:destination="@id/courseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseFragment"
+        android:name="ramizbek.aliyev.codialapp.CourseFragment"
+        android:label="fragment_course"
+        tools:layout="@layout/fragment_course">
+        <action
+            android:id="@+id/action_courseFragment_to_mentorsFragment"
+            app:destination="@id/mentorsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorsFragment"
+        android:name="ramizbek.aliyev.codialapp.MentorsFragment"
+        android:label="fragment_mentors"
+        tools:layout="@layout/fragment_mentors">
+        <action
+            android:id="@+id/action_mentorsFragment_to_addMentorsFragment"
+            app:destination="@id/addMentorsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMentorsFragment"
+        android:name="ramizbek.aliyev.codialapp.AddMentorsFragment"
+        android:label="fragment_add_mentors"
+        tools:layout="@layout/fragment_add_mentors" />
+    <fragment
+        android:id="@+id/showCourseFragment"
+        android:name="ramizbek.aliyev.codialapp.ShowCourseFragment"
+        android:label="fragment_show_course"
+        tools:layout="@layout/fragment_show_course" />
+    <fragment
+        android:id="@+id/groupsFragment"
+        android:name="ramizbek.aliyev.codialapp.GroupsFragment"
+        android:label="fragment_groups"
+        tools:layout="@layout/fragment_groups" />
+    <fragment
+        android:id="@+id/editStudentFragment"
+        android:name="ramizbek.aliyev.codialapp.EditStudentFragment"
+        android:label="fragment_edit_student"
+        tools:layout="@layout/fragment_edit_student" />
+    <fragment
+        android:id="@+id/addGroupsFragment"
+        android:name="ramizbek.aliyev.codialapp.AddGroupsFragment"
+        android:label="fragment_add_groups"
+        tools:layout="@layout/fragment_add_groups" />
+    <fragment
+        android:id="@+id/showGroupsFragment"
+        android:name="ramizbek.aliyev.codialapp.ShowGroupsFragment"
+        android:label="fragment_show_groups"
+        tools:layout="@layout/fragment_show_groups" />
+</navigation>
